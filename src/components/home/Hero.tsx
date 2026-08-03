@@ -1,32 +1,85 @@
+import Image from "next/image";
+import Button from "@/components/ui/Button";
+
 export default function Hero() {
   return (
     <section className="bg-[#F5F5DC]">
-      <div className="mx-auto flex min-h-[80vh] max-w-7xl flex-col items-center justify-center px-6 text-center">
+      <div className="mx-auto flex min-h-[85vh] max-w-7xl flex-col items-center gap-12 px-6 py-16 md:flex-row">
 
-        <p className="mb-4 text-sm uppercase tracking-[0.3em]">
-          Premium Fashion & Accessories
-        </p>
+        {/* Left Content */}
+        <div className="flex-1">
 
-        <h1 className="max-w-4xl text-5xl font-bold leading-tight md:text-7xl">
-          Discover Timeless Style &
-          <br />
-          Trending Fashion
-        </h1>
+          <p className="mb-4 uppercase tracking-[0.3em] text-sm text-black/60">
+            Premium Fashion & Accessories
+          </p>
 
-        <p className="mt-8 max-w-2xl text-lg text-black/70">
-          Curated fashion, luxury watches and accessories designed to
-          elevate your everyday look.
-        </p>
+          <h1 className="font-heading text-5xl leading-tight md:text-7xl">
+            Discover
+            <br />
+            Timeless Style
+            <br />
+            & Trending Fashion
+          </h1>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <p className="mt-8 max-w-xl text-lg text-black/70">
+            Discover carefully curated fashion, luxury watches and
+            accessories designed to elevate your everyday wardrobe.
+          </p>
 
-          <button className="rounded-full bg-black px-8 py-4 text-white">
-            Shop Trending
-          </button>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Button>
+              Shop Trending
+            </Button>
 
-          <button className="rounded-full border border-black px-8 py-4">
-            Explore Collections
-          </button>
+            <Button variant="secondary">
+              Explore Collection
+            </Button>
+          </div>
+
+          {/* Trust badges */}
+
+          <div className="mt-12 flex flex-wrap gap-6 text-sm">
+
+            <span>✓ Premium Quality</span>
+
+            <span>✓ Secure Checkout</span>
+
+            <span>✓ Worldwide Shipping</span>
+
+          </div>
+
+        </div>
+
+        {/* Right Image */}
+
+        <div className="relative flex-1">
+
+          <Image
+            src="/images/hero.jpg"
+            alt="Luxury Fashion"
+            width={700}
+            height={850}
+            priority
+            className="rounded-[40px] object-cover shadow-2xl"
+          />
+
+          {/* Floating Card */}
+
+          <div className="absolute -bottom-6 -left-6 rounded-2xl bg-white p-6 shadow-xl">
+
+            <p className="text-xs uppercase tracking-widest text-black/60">
+              Trending
+            </p>
+
+            <h3 className="mt-2 text-xl font-semibold">
+              New Collection
+            </h3>
+
+            <p className="mt-2 text-sm text-black/60">
+              Luxury pieces selected for this season.
+            </p>
+
+          </div>
 
         </div>
 
