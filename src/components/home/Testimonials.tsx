@@ -21,58 +21,74 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-white py-16 sm:py-24">
 
-        <div className="mb-14 text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6">
+
+
+        <div className="mb-10 text-center sm:mb-14">
+
+          <p className="text-xs uppercase tracking-[0.3em] text-gray-500 sm:text-sm">
             Customer Love
           </p>
 
-          <h2 className="mt-3 text-4xl font-semibold">
+
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
             What Our Customers Say
           </h2>
 
-          <p className="mt-4 text-gray-600">
+
+          <p className="mx-auto mt-4 max-w-xl text-sm text-gray-600 sm:text-base">
             Real experiences from customers who love our collections.
           </p>
+
         </div>
 
 
-        <div className="grid gap-8 md:grid-cols-3">
+
+        <div className="grid gap-5 md:grid-cols-3 sm:gap-8">
 
           {testimonials.map((testimonial) => (
+
             <div
               key={testimonial.name}
-              className="rounded-3xl bg-[#F5F5DC] p-8 transition hover:-translate-y-2"
+              className="rounded-3xl bg-[#F5F5DC] p-6 transition hover:-translate-y-2 hover:shadow-lg sm:p-8"
             >
 
-              <div className="text-yellow-500">
+
+              <div className="text-lg tracking-wider text-yellow-500">
                 ★★★★★
               </div>
 
 
-              <p className="mt-5 leading-7 text-gray-700">
+              <p className="mt-5 text-sm leading-7 text-gray-700 sm:text-base">
                 "{testimonial.review}"
               </p>
 
 
               <div className="mt-6">
+
                 <h3 className="font-semibold">
                   {testimonial.name}
                 </h3>
 
+
                 <p className="text-sm text-gray-500">
                   {testimonial.role}
                 </p>
+
               </div>
 
+
             </div>
+
           ))}
 
         </div>
 
+
       </div>
+
     </section>
   );
 }
