@@ -49,45 +49,46 @@ export default function Hero() {
           </div>
         </div>
 
-        ```tsx
 {/* Right Image */}
 <div className="w-full flex-1">
-  <div className="relative overflow-hidden rounded-[2rem] shadow-2xl">
-    <Image
-      src="/images/hero.jpg"
-      alt="Premium fashion and accessories"
-      width={700}
-      height={850}
-      priority
-      className="h-auto w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
-    />
-  </div>
+  <div className="relative">
+    {/* Image */}
+    <div className="overflow-hidden rounded-[2rem] shadow-2xl">
+      <Image
+        src="/images/hero.jpg"
+        alt="Premium fashion and accessories"
+        width={700}
+        height={850}
+        priority
+        className="h-auto w-full object-cover transition-transform duration-700 hover:scale-[1.02]"
+      />
+    </div>
 
-  {/* Floating Card */}
-  <div className="relative z-10 -mt-2 ml-4 mr-4 rounded-2xl border border-black/5 bg-white/95 p-5 shadow-xl backdrop-blur-sm sm:ml-6 sm:mr-6 sm:p-6 lg:absolute lg:bottom-6 lg:left-6 lg:mt-0 lg:mr-0 lg:max-w-[270px]">
-    <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-black/50">
-      Trending Now
-    </p>
+    {/* Floating Card */}
+    <div className="relative z-10 mx-4 -mt-2 rounded-2xl border border-black/5 bg-white/95 p-5 shadow-xl backdrop-blur-sm sm:mx-6 sm:p-6 lg:absolute lg:bottom-6 lg:left-6 lg:mx-0 lg:mt-0 lg:w-[270px]">
+      <p className="text-[10px] font-medium uppercase tracking-[0.25em] text-black/50">
+        Trending Now
+      </p>
 
-    <h3 className="mt-2 font-heading text-2xl">
-      New Collection
-    </h3>
+      <h3 className="mt-2 font-heading text-2xl">
+        New Collection
+      </h3>
 
-    <p className="mt-2 text-sm leading-6 text-black/60">
-      Luxury pieces selected for this season.
-    </p>
+      <p className="mt-2 text-sm leading-6 text-black/60">
+        Luxury pieces selected for this season.
+      </p>
 
-    <a
-      href="https://www.beautyandthemountains.store/collections/all"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="mt-4 inline-block text-xs font-semibold uppercase tracking-wider underline underline-offset-4 transition-opacity hover:opacity-60"
-    >
-      Explore →
-    </a>
+      <a
+        href="https://www.beautyandthemountains.store/collections/all"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-4 inline-block text-xs font-semibold uppercase tracking-wider underline underline-offset-4 transition-opacity hover:opacity-60"
+      >
+        Explore →
+      </a>
+    </div>
   </div>
 </div>
-```
 
       </div>
     </section>
