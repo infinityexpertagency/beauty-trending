@@ -16,7 +16,7 @@ export default function CollectionToolbar({
       </p>
 
       <select
-        className="w-full rounded-full border border-black/20 bg-white px-5 py-3 text-sm outline-none sm:w-auto"
+        className="w-full rounded-full border border-black/20 bg-white px-5 py-3 text-sm outline-none transition focus:border-black sm:w-auto"
         defaultValue="Featured"
         onChange={(event) => onSortChange(event.target.value)}
       >

@@ -7,18 +7,17 @@ import { products } from "@/data/products";
 
 export default function BagsAndBackpacksPage() {
   const categories = ["Bags & Backpacks"];
-
-  const bagProducts = products.filter((product) =>
-    categories.includes(product.category)
-  );
-
   const [sort, setSort] = useState("Featured");
+
+  const productCount = products.filter((product) =>
+    categories.includes(product.category)
+  ).length;
 
   return (
     <section className="bg-[#F5F5DC]">
       <div className="mx-auto max-w-7xl px-5 py-10">
         <CollectionToolbar
-          productCount={bagProducts.length}
+          productCount={productCount}
           onSortChange={setSort}
         />
 
