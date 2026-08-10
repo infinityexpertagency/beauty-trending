@@ -14,9 +14,20 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Beauty & The Mountains | Premium Fashion & Accessories",
+  metadataBase: new URL("https://www.beautyandthemountains.store"),
+
+  title: {
+    default: "Beauty & The Mountains | Premium Fashion & Accessories",
+    template: "%s | Beauty & The Mountains",
+  },
+
   description:
     "Discover premium fashion, luxury watches, shoes, bags, and accessories at Beauty & The Mountains.",
+
+  alternates: {
+    canonical: "https://www.beautyandthemountains.store",
+  },
+
   icons: {
     icon: [
       {
@@ -24,6 +35,31 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
+  },
+
+  openGraph: {
+    title: "Beauty & The Mountains | Premium Fashion & Accessories",
+    description:
+      "Discover premium fashion, luxury watches, shoes, bags, and accessories at Beauty & The Mountains.",
+    url: "https://www.beautyandthemountains.store",
+    siteName: "Beauty & The Mountains",
+    type: "website",
+    images: [
+      {
+        url: "/images/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Beauty & The Mountains - Premium Fashion & Accessories",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Beauty & The Mountains | Premium Fashion & Accessories",
+    description:
+      "Discover premium fashion, luxury watches, shoes, bags, and accessories at Beauty & The Mountains.",
+    images: ["/images/hero.jpg"],
   },
 };
 
