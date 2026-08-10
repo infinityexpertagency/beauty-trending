@@ -7,53 +7,45 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header>
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-[#F5F5DC]/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         {/* Logo */}
         <a href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
-            alt="Beauty & The Mountains"
-            width={150}
+            alt="Beauty and The Mountains"
+            width={180}
             height={50}
+            className="h-auto w-[150px] object-contain sm:w-[180px]"
             priority
-            className="w-[130px] sm:w-[150px]"
           />
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-8 md:flex">
           <a
-            href="https://www.beautyandthemountains.store/collections/the-womens-edit"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/women"
             className="transition hover:opacity-70"
           >
             Women
           </a>
 
           <a
-            href="https://www.beautyandthemountains.store/collections/the-mens-edit"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/men"
             className="transition hover:opacity-70"
           >
             Men
           </a>
 
           <a
-            href="https://www.beautyandthemountains.store/collections/watches-jewellery"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/watches"
             className="transition hover:opacity-70"
           >
             Watches &amp; Jewellery
           </a>
 
           <a
-            href="https://www.beautyandthemountains.store/collections/bags-backpacks"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/bags&backpacks"
             className="transition hover:opacity-70"
           >
             Bags &amp; Backpacks
@@ -84,12 +76,10 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="border-t border-black/10 bg-[#F5F5DC] px-6 py-6 md:hidden">
+        <div className="border-t border-black/10 bg-[#F5F5DC]/95 px-6 py-6 backdrop-blur md:hidden">
           <nav className="flex flex-col gap-5">
             <a
-              href="https://www.beautyandthemountains.store/collections/the-womens-edit"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/women"
               onClick={() => setOpen(false)}
               className="transition hover:opacity-70"
             >
@@ -97,9 +87,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.beautyandthemountains.store/collections/the-mens-edit"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/men"
               onClick={() => setOpen(false)}
               className="transition hover:opacity-70"
             >
@@ -107,9 +95,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.beautyandthemountains.store/collections/watches-jewellery"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/watches"
               onClick={() => setOpen(false)}
               className="transition hover:opacity-70"
             >
@@ -117,9 +103,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.beautyandthemountains.store/collections/bags-backpacks"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/bags&backpacks"
               onClick={() => setOpen(false)}
               className="transition hover:opacity-70"
             >
