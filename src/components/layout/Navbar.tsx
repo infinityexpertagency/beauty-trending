@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -26,22 +27,42 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden gap-8 md:flex">
-          <a href="#" className="transition hover:opacity-70">
-            Women
-          </a>
+  <a
+    href="https://www.beautyandthemountains.store/collections/the-womens-edit"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition hover:opacity-70"
+  >
+    Women
+  </a>
 
-          <a href="#" className="transition hover:opacity-70">
-            Men
-          </a>
+  <a
+    href="https://www.beautyandthemountains.store/collections/the-mens-edit"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition hover:opacity-70"
+  >
+    Men
+  </a>
 
-          <a href="#" className="transition hover:opacity-70">
-            Watches
-          </a>
+  <a
+    href="https://www.beautyandthemountains.store/collections/watches-jewellery"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition hover:opacity-70"
+  >
+    Watches
+  </a>
 
-          <a href="#" className="transition hover:opacity-70">
-            Accessories
-          </a>
-        </nav>
+  <a
+    href="https://www.beautyandthemountains.store/collections/bags-backpacks"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition hover:opacity-70"
+  >
+    Accessories
+  </a>
+</nav>
 
 
         {/* Desktop Button */}
@@ -66,22 +87,21 @@ export default function Navbar() {
         <div className="border-t border-black/10 bg-[#F5F5DC] px-6 py-6 md:hidden">
 
           <nav className="flex flex-col gap-5">
+              <Link href="/women" className="transition hover:opacity-70">
+                Women
+              </Link>
 
-            <a href="#">
-              Women
-            </a>
+              <Link href="/men" className="transition hover:opacity-70">
+                Men
+              </Link>
 
-            <a href="#">
-              Men
-            </a>
+              <Link href="/watches" className="transition hover:opacity-70">
+                Watches
+              </Link>
 
-            <a href="#">
-              Watches
-            </a>
-
-            <a href="#">
-              Accessories
-            </a>
+              <Link href="/accessories" className="transition hover:opacity-70">
+                Accessories
+              </Link>
 
             <button className="mt-3 rounded-full bg-black px-6 py-3 text-white">
               Shop Now

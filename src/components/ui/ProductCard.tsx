@@ -12,6 +12,7 @@ type ProductCardProps = {
   compareAtPrice: string;
   badge: string;
   badgeColor: string;
+  shopifyUrl: string;
 };
 
 const badgeStyles = {
@@ -29,6 +30,7 @@ export default function ProductCard({
   compareAtPrice,
   badge,
   badgeColor,
+  shopifyUrl
 }: ProductCardProps) {
   return (
     <motion.div
@@ -73,12 +75,14 @@ export default function ProductCard({
           </span>
         </div>
 
-        <Link
-          href="#"
-          className="mt-5 inline-block rounded-full border border-black px-5 py-2 text-sm font-medium transition hover:bg-black hover:text-white"
-        >
-          View Product
-        </Link>
+        <a
+  href={shopifyUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-block text-sm underline underline-offset-4 transition-opacity hover:opacity-70"
+>
+  View Product →
+</a>
       </div>
     </motion.div>
   );

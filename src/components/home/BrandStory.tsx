@@ -30,12 +30,14 @@ export default function BrandStory() {
           </p>
 
 
-          <Link
-            href="#"
-            className="mt-7 inline-flex rounded-full bg-black px-6 py-3 text-sm text-white transition hover:bg-gray-800 sm:mt-8"
+          <a
+            href="https://www.beautyandthemountains.store/pages/about-us"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex rounded-full bg-black px-6 py-3 text-white transition hover:bg-gray-800"
           >
             Discover Our Story
-          </Link>
+          </a>
 
         </div>
 

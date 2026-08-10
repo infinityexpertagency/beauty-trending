@@ -1,7 +1,13 @@
-export type Product = {
+export interface Product {
   id: number;
-  title: string;
-  price: string;
+  handle: string;
   image: string;
   category: string;
-};
+  title: string;
+  price: string;
+  compareAtPrice: string;
+  badge: string;
+  badgeColor: string;
+  description: string;
+  shopifyUrl: string;
+}

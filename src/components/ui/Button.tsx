@@ -21,7 +21,10 @@ export default function Button({
       : "border border-black text-black hover:bg-black hover:text-white";
 
   return (
-    <Link href={href} className={`${base} ${style}`}>
+    <Link
+      href={href}
+      className={`${base} ${style}`}
+    >
       {children}
     </Link>
   );

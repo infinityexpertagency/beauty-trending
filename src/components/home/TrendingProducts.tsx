@@ -38,6 +38,7 @@ export default function TrendingProducts() {
               compareAtPrice={product.compareAtPrice}
               badge={product.badge}
               badgeColor={product.badgeColor}
+              shopifyUrl={product.shopifyUrl}
             />
 
           ))}

@@ -39,112 +39,231 @@ export default function Footer() {
 
 
           {/* Shop */}
+<div>
+  <h3 className="mb-5 font-semibold">
+    Shop
+  </h3>
 
-          <div>
+  <ul className="space-y-3 text-sm text-white/60">
 
-            <h3 className="mb-5 font-semibold">
-              Shop
-            </h3>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/the-womens-edit"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        The Women's Edit
+      </a>
+    </li>
 
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/the-mens-edit"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        The Men's Edit
+      </a>
+    </li>
 
-            <ul className="space-y-3 text-sm text-white/60">
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/womens-shoes"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Women's Shoes
+      </a>
+    </li>
 
-              <li>
-                <Link href="#" className="transition hover:text-white">
-                  Women
-                </Link>
-              </li>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/mens-shoes"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Men's Shoes
+      </a>
+    </li>
 
-              <li>
-                <Link href="#" className="transition hover:text-white">
-                  Men
-                </Link>
-              </li>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/watches-jewellery"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Watches & Jewellery
+      </a>
+    </li>
 
-              <li>
-                <Link href="#" className="transition hover:text-white">
-                  Watches
-                </Link>
-              </li>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/bags-backpacks"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Bags & Backpacks
+      </a>
+    </li>
 
-              <li>
-                <Link href="#" className="transition hover:text-white">
-                  Accessories
-                </Link>
-              </li>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/sunglasses"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Sunglasses
+      </a>
+    </li>
 
-            </ul>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/collections/belts"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Belts
+      </a>
+    </li>
 
-          </div>
-
+  </ul>
+</div>
 
 
 
           {/* Customer Care */}
+<div>
+  <h3 className="mb-5 font-semibold">
+    Customer Care
+  </h3>
 
-          <div>
+  <ul className="space-y-3 text-sm text-white/60">
 
-            <h3 className="mb-5 font-semibold">
-              Customer Care
-            </h3>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/policies/shipping-policy"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Shipping
+      </a>
+    </li>
 
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/policies/refund-policy"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Returns
+      </a>
+    </li>
 
-            <ul className="space-y-3 text-sm text-white/60">
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/pages/contact"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        Contact
+      </a>
+    </li>
 
-              <li>Shipping</li>
-              <li>Returns</li>
-              <li>Contact</li>
-              <li>FAQ</li>
+    <li>
+      <a
+        href="https://www.beautyandthemountains.store/pages/faq"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        FAQ
+      </a>
+    </li>
 
-            </ul>
-
-          </div>
-
+  </ul>
+</div>
 
 
 
           {/* Social */}
+<div>
+  <h3 className="mb-5 font-semibold">
+    Follow Us
+  </h3>
 
-          <div>
+  <div className="flex items-center gap-4">
 
-            <h3 className="mb-5 font-semibold">
-              Follow Us
-            </h3>
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/beautyandthemountainsstore1/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:bg-white hover:text-black"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        className="h-5 w-5"
+      >
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      </svg>
+    </a>
 
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/profile.php?id=61591561839648"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:bg-white hover:text-black"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="h-5 w-5"
+      >
+        <path d="M13.5 21v-8h2.75l.4-3h-3.15V8.08c0-.87.24-1.46 1.5-1.46h1.75V3.94c-.3-.04-1.33-.13-2.53-.13-2.5 0-4.22 1.53-4.22 4.34V10H7.25v3H10v8h3.5Z" />
+      </svg>
+    </a>
 
-            <div className="flex gap-4">
+    {/* TikTok */}
+    <a
+      href="https://www.tiktok.com/@shopbeautyandmountains"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="TikTok"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition hover:bg-white hover:text-black"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="h-5 w-5"
+      >
+        <path d="M16.7 3c.3 1.8 1.3 3 3.1 3.2v3.1c-1.7-.1-3.1-.6-4.3-1.5v6.7c0 3.4-2.5 5.5-5.5 5.5A5.5 5.5 0 1 1 12 9.3v3.2a2.3 2.3 0 1 0 .3 2v-11.5h4.4Z" />
+      </svg>
+    </a>
 
-
-              <Link
-                href="#"
-                className="rounded-full border border-white/20 p-3 transition hover:bg-white hover:text-black"
-              >
-                <FaInstagram size={20} />
-              </Link>
-
-
-
-              <Link
-                href="#"
-                className="rounded-full border border-white/20 p-3 transition hover:bg-white hover:text-black"
-              >
-                <FaFacebookF size={20} />
-              </Link>
-
-
-
-              <Link
-                href="#"
-                className="rounded-full border border-white/20 p-3 transition hover:bg-white hover:text-black"
-              >
-                <FaPinterestP size={20} />
-              </Link>
-
-
-            </div>
-
-
-          </div>
+  </div>
+</div>
 
 
         </div>

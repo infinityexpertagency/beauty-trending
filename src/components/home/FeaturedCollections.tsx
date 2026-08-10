@@ -32,7 +32,9 @@ export default function FeaturedCollections() {
           {/* Women's Collection */}
 
           <Link
-            href="#"
+            href="https://www.beautyandthemountains.store/collections/the-womens-edit"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-3xl"
           >
 
@@ -74,7 +76,9 @@ export default function FeaturedCollections() {
           {/* Men's Collection */}
 
           <Link
-            href="#"
+            href="https://www.beautyandthemountains.store/collections/the-mens-edit"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative overflow-hidden rounded-3xl"
           >
 
