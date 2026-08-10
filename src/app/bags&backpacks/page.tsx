@@ -6,9 +6,9 @@ export default function AccessoriesPage() {
   return (
     <>
       <CollectionHero
-        title="Accessories"
+        title="Bags & Backpacks"
         subtitle="Complete your look with carefully curated accessories."
-        image="/images/accessories.jpg"
+        image="/images/bags&backpacks.jpg"
       />
 
       <section className="bg-[#F5F5DC]">

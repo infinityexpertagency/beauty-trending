@@ -14,17 +14,16 @@ const categories = [
     href: "https://www.beautyandthemountains.store/collections/the-mens-edit",
   },
   {
-    name: "Watches",
-    image: "/images/watches.jpg",
+    name: "Watches & Jewellery",
+    image: "/images/watches&jewellery.jpg",
     href: "https://www.beautyandthemountains.store/collections/watches-jewellery",
   },
   {
-    name: "Accessories",
-    image: "/images/accessories.jpg",
+    name: "Bags & Backpacks",
+    image: "/images/bags&backpacks.jpg",
     href: "https://www.beautyandthemountains.store/collections/bags-backpacks",
   },
 ];
-
 export default function Categories() {
   return (
     <section className="bg-[#F5F5DC] py-24">

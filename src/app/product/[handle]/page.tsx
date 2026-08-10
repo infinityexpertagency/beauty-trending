@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { products } from "@/data/products";
-import Image from "next/image";
 import ProductGallery from "@/components/product/ProductGallery";
 import ProductInfo from "@/components/product/ProductInfo";
 

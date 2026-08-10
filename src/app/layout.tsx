@@ -14,9 +14,12 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Beauty & The Mountains Trends",
+  title: "Beauty & The Mountains | Premium Fashion & Accessories",
   description:
-    "Discover premium fashion, watches and accessories from Beauty & The Mountains.",
+    "Discover premium fashion, luxury watches, shoes, bags, and accessories at Beauty & The Mountains.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

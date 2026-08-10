@@ -8,7 +8,7 @@ export default function MenPage() {
       <CollectionHero
         title="Men's Collection"
         subtitle="Classic and modern fashion designed for today's gentleman."
-        image="/images/collection-men.jpg"
+        image="/images/men.jpg"
       />
 
       <section className="bg-[#F5F5DC]">

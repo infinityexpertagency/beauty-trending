@@ -8,7 +8,7 @@ export default function WatchesPage() {
       <CollectionHero
         title="Luxury Watches"
         subtitle="Timeless craftsmanship for every occasion."
-        image="/images/product-1.jpg"
+        image="/images/watches&jewellery.jpg"
       />
 
       <section className="bg-[#F5F5DC]">

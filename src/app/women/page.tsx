@@ -8,7 +8,7 @@ export default function WomenPage() {
       <CollectionHero
         title="Women's Collection"
         subtitle="Discover elegant fashion designed for every occasion."
-        image="/images/collection-women.jpg"
+        image="/images/women.jpg"
       />
 
       <section className="bg-[#F5F5DC]">
