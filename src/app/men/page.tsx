@@ -1,22 +1,21 @@
-import CollectionHero from "@/components/collections/CollectionHero";
 import CollectionToolbar from "@/components/collections/CollectionToolbar";
 import CollectionGrid from "@/components/collections/CollectionGrid";
+import { products } from "@/data/products";
 
 export default function MenPage() {
-  return (
-    <>
-      <CollectionHero
-        title="Men's Collection"
-        subtitle="Classic and modern fashion designed for today's gentleman."
-        image="/images/men.jpg"
-      />
+  const categories = ["Men's Shoes"];
 
-      <section className="bg-[#F5F5DC]">
-        <div className="mx-auto max-w-7xl px-5 py-10">
-          <CollectionToolbar />
-          <CollectionGrid />
-        </div>
-      </section>
-    </>
+  const menProducts = products.filter((product) =>
+    categories.includes(product.category)
+  );
+
+  return (
+    <section className="bg-[#F5F5DC]">
+      <div className="mx-auto max-w-7xl px-5 py-10">
+        <CollectionToolbar productCount={menProducts.length} />
+
+        <CollectionGrid categories={categories} />
+      </div>
+    </section>
   );
 }

@@ -1,25 +1,21 @@
-import CollectionHero from "@/components/collections/CollectionHero";
 import CollectionToolbar from "@/components/collections/CollectionToolbar";
 import CollectionGrid from "@/components/collections/CollectionGrid";
+import { products } from "@/data/products";
 
 export default function WomenPage() {
+  const categories = ["Women's Fashion", "Women's Shoes"];
+
+  const womenProducts = products.filter((product) =>
+    categories.includes(product.category)
+  );
+
   return (
-    <>
-      <CollectionHero
-        title="Women's Collection"
-        subtitle="Discover elegant fashion designed for every occasion."
-        image="/images/women.jpg"
-      />
+    <section className="bg-[#F5F5DC]">
+      <div className="mx-auto max-w-7xl px-5 py-10">
+        <CollectionToolbar productCount={womenProducts.length} />
 
-      <section className="bg-[#F5F5DC]">
-        <div className="mx-auto max-w-7xl px-5 py-10">
-
-          <CollectionToolbar />
-
-          <CollectionGrid />
-
-        </div>
-      </section>
-    </>
+        <CollectionGrid categories={categories} />
+      </div>
+    </section>
   );
 }
