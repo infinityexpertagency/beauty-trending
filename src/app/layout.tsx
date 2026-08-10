@@ -18,7 +18,12 @@ export const metadata: Metadata = {
   description:
     "Discover premium fashion, luxury watches, shoes, bags, and accessories at Beauty & The Mountains.",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      {
+        url: "/favicon.png",
+        type: "image/png",
+      },
+    ],
   },
 };
 
