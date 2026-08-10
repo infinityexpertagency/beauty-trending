@@ -16,7 +16,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/womens-zip-up-sportswear-2-piece-set",
   },
-
   {
     id: 2,
     handle:
@@ -33,7 +32,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/breathable-flats-female-shoes-summer-2026-new-arrival-leather-flats-woman-moccasin-loafers-casual-mom-shoes-womens-ballet-flats",
   },
-
   {
     id: 3,
     handle: "classic-unisex-uv-protection-sunglasses",
@@ -49,7 +47,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/classic-unisex-uv-protection-sunglasses",
   },
-
   {
     id: 4,
     handle: "womens-square-dial-quartz-leather-watch",
@@ -65,7 +62,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/womens-square-dial-quartz-leather-watch",
   },
-
   {
     id: 5,
     handle: "mens-luxury-quartz-chronograph-watch",
@@ -81,7 +77,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/mens-luxury-quartz-chronograph-watch",
   },
-
   {
     id: 6,
     handle: "womens-luxury-steel-quartz-watch",
@@ -97,7 +92,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/womens-luxury-steel-quartz-watch",
   },
-
   {
     id: 7,
     handle: "mens-breathable-walking-sneakers",
@@ -113,7 +107,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/mens-breathable-walking-sneakers",
   },
-
   {
     id: 8,
     handle: "mens-handmade-leather-casual-loafers",
@@ -129,7 +122,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/mens-handmade-leather-casual-loafers",
   },
-
   {
     id: 9,
     handle: "womens-soft-leather-crossbody-handbag",
@@ -145,7 +137,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/womens-soft-leather-crossbody-handbag",
   },
-
   {
     id: 10,
     handle: "womens-large-leather-tote-bag",
@@ -161,7 +152,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/womens-large-leather-tote-bag",
   },
-
   {
     id: 11,
     handle: "mens-automatic-buckle-leather-belt",
@@ -177,7 +167,6 @@ export const products: Product[] = [
     shopifyUrl:
       "https://www.beautyandthemountains.store/products/mens-automatic-buckle-leather-belt",
   },
-
   {
     id: 12,
     handle: "womens-genuine-leather-ballet-flats",
