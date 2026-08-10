@@ -7,14 +7,15 @@ export default function CollectionGrid() {
 
       {products.map((product) => (
         <ProductCard
-          key={product.id}
-          image={product.image}
-          category={product.category}
-          title={product.title}
-          price={product.price}
-          compareAtPrice={product.compareAtPrice}
-          badge={product.badge}
-          badgeColor={product.badgeColor}
+        key={product.id}
+        image={product.image}
+        category={product.category}
+        title={product.title}
+        price={product.price}
+        compareAtPrice={product.compareAtPrice}
+        badge={product.badge}
+        badgeColor={product.badgeColor}
+        shopifyUrl={product.shopifyUrl}
         />
       ))}
 
